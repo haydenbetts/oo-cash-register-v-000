@@ -35,6 +35,7 @@ class CashRegister
   end
 
   def void_last_transaction
+    # remove last transcation from total
   end
 
 end
