@@ -19,6 +19,7 @@ class CashRegister
   end
 
   def update_total(price, quantity)
+    self.previous_total = self.total
     self.total += price * quantity
   end
 
@@ -33,7 +34,7 @@ class CashRegister
   end
 
   def void_last_transaction
-    # remove last transcation from total
+    total
   end
 
 end
