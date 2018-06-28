@@ -11,13 +11,11 @@ class CashRegister
 
   def add_item(item, price, quantity = 1)
     update_total(price, quantity)
-
-
     @items << item
   end
 
   def update_total(price, quantity)
-    self.total + = price * quantity
+    self.total += price * quantity
   end
 
   def apply_discount
