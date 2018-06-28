@@ -1,7 +1,7 @@
 require 'pry'
 
 class CashRegister
-  attr_accessor :discount, :total
+  attr_accessor :discount, :total, :items
 
   def initialize(discount = nil)
     @discount = discount
@@ -22,6 +22,7 @@ class CashRegister
   end
 
   def items
+
   end
 
   def void_last_transaction
